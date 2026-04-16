@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Urban Cafe — Your daily dose of comfort. Premium coffee, artisan beverages, fresh snacks and desserts in a cozy, warm atmosphere. Order online or reserve a table today.">
+  <meta name="keywords" content="Urban Cafe, coffee shop, café, artisan coffee, cozy café, online order, reserve table">
+  <meta name="author" content="Urban Cafe">
+  <title>Urban Cafe — Your Daily Dose of Comfort ☕</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ============ LOADER ============ -->
+  <div id="loader" class="loader">
+    <div class="loader-inner">
+      <div class="coffee-cup">
+        <i class="fas fa-mug-hot"></i>
+      </div>
+      <p>Brewing your experience...</p>
+    </div>
+  </div>
+
+  <!-- ============ NAVBAR ============ -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <i class="fas fa-mug-hot"></i>
+        <span>Urban<em>Cafe</em></span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#menu" class="nav-link">Menu</a></li>
+        <li><a href="#offers" class="nav-link">Offers</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#reviews" class="nav-link">Reviews</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="#reservation" class="nav-link nav-cta">Reserve Table</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <section id="home" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-particles" id="heroParticles"></div>
+    <div class="hero-content">
+      <p class="hero-subtitle animate-fade-up">Welcome to Urban Cafe</p>
+      <h1 class="hero-title animate-fade-up delay-1">Your Daily Dose<br>of Comfort ☕</h1>
+      <p class="hero-desc animate-fade-up delay-2">Handcrafted coffee, artisan beverages, and freshly baked treats —<br>all in a warm, inviting space made just for you.</p>
+      <div class="hero-btns animate-fade-up delay-3">
+        <a href="#menu" class="btn btn-primary" id="heroOrderBtn"><i class="fas fa-coffee"></i> Order Now</a>
+        <a href="#contact" class="btn btn-outline" id="heroVisitBtn"><i class="fas fa-map-marker-alt"></i> Visit Us</a>
+      </div>
+      <div class="hero-stats animate-fade-up delay-4">
+        <div class="stat">
+          <span class="stat-number" data-count="15">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Years Serving</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number" data-count="50">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Menu Items</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number" data-count="10">0</span><span class="stat-plus">K+</span>
+          <span class="stat-label">Happy Customers</span>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="hero-scroll">
+      <span>Scroll Down</span>
+      <i class="fas fa-chevron-down"></i>
+    </a>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about" class="about section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image reveal-left">
+          <div class="about-img-wrapper">
+            <img src="images/about.png" alt="Latte art at Urban Cafe" loading="lazy">
+            <div class="about-badge">
+              <span class="badge-number">15+</span>
+              <span class="badge-text">Years of<br>Excellence</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-text reveal-right">
+          <span class="section-label"><i class="fas fa-leaf"></i> Our Story</span>
+          <h2 class="section-title">Where Every Cup<br>Tells a Story</h2>
+          <p class="about-desc">Born in 2010 from a simple love for great coffee and genuine connections, <strong>Urban Cafe</strong> has grown into the neighborhood's favorite spot. We source our beans from sustainable farms, roast them in-house, and pour every cup with care.</p>
+          <p class="about-desc">Whether you're studying for exams, catching up with friends, or simply unwinding after a long day — our warm interiors, free Wi-Fi, and friendly baristas make Urban Cafe your second home.</p>
+          <div class="about-features">
+            <div class="feature">
+              <div class="feature-icon"><i class="fas fa-seedling"></i></div>
+              <div>
+                <h4>Ethically Sourced</h4>
+                <p>100% sustainable, farm-to-cup beans</p>
+              </div>
+            </div>
+            <div class="feature">
+              <div class="feature-icon"><i class="fas fa-fire"></i></div>
+              <div>
+                <h4>Freshly Roasted</h4>
+                <p>In-house roasting for peak flavor</p>
+              </div>
+            </div>
+            <div class="feature">
+              <div class="feature-icon"><i class="fas fa-wifi"></i></div>
+              <div>
+                <h4>Work-Friendly</h4>
+                <p>Free Wi-Fi, power outlets, cozy nooks</p>
+              </div>
+            </div>
+            <div class="feature">
+              <div class="feature-icon"><i class="fas fa-heart"></i></div>
+              <div>
+                <h4>Community First</h4>
+                <p>Events, open mics, and more</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MENU ============ -->
+  <section id="menu" class="menu section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-label"><i class="fas fa-utensils"></i> Our Menu</span>
+        <h2 class="section-title">Crafted with Love</h2>
+        <p class="section-desc">From rich espressos to indulgent desserts — explore our handcrafted menu designed to delight every palate.</p>
+      </div>
+      
+      <div class="menu-filters reveal-up">
+        <button class="menu-filter active" data-filter="all" id="filterAll">All</button>
+        <button class="menu-filter" data-filter="coffee" id="filterCoffee">☕ Coffee</button>
+        <button class="menu-filter" data-filter="beverages" id="filterBeverages">🧋 Beverages</button>
+        <button class="menu-filter" data-filter="snacks" id="filterSnacks">🍟 Snacks</button>
+        <button class="menu-filter" data-filter="desserts" id="filterDesserts">🍰 Desserts</button>
+      </div>
+
+      <div class="menu-grid" id="menuGrid">
+        <!-- Coffee -->
+        <div class="menu-card reveal-up" data-category="coffee">
+          <div class="menu-card-icon">☕</div>
+          <div class="menu-card-content">
+            <div class="menu-card-header">
+              <h3>Classic Espresso</h3>
+              <span class="menu-price">$3.50</span>
+            </div>
+            <p>Bold, rich double shot pulled from our signature house blend</p>
+            <span class="menu-tag">Bestseller</span>
+          </div>
+        </div>
+        <div class="menu-card reveal-up" data-category="coffee">
+          <div class="menu-card-icon">☕</div>
+          <div class="menu-card-content">
+            <div class="menu-card-header">
+              <h3>Caramel Latte</h3>
+              <span class="menu-price">$5.00</span>
+            </div>
+            <p>Velvety steamed milk with espresso and house-made caramel</p>
+            <span class="menu-tag new">New</span>
+          </div>
+        </div>
+        <div class="menu-card reveal-up" data-category="coffee">
+          <div class="menu-card-icon">☕</div>
+          <div class="menu-card-content">
+            <div class="menu-card-header">
+              <h3>Cappuccino</h3>
+              <span class="menu-price">$4.50</span>
+            </div>
+            <p>Perfect ratio of espresso, steamed milk, and frothy foam</p>
+          </div>
+        </div>
+        <div class="menu-card reveal-up" data-category="coffee">
+          <div class="menu-card-icon">☕</div>
+          <div class="menu-card-content">
+            <div class="menu-card-header">
+              <h3>Mocha Delight</h3>
+              <span class="menu-price">$5.50</span>
+            </div>
+            <p>Rich chocolate meets espresso, topped with whipped cream</p>
+          </div>
+        </div>
+
+        <!-- Beverages -->
+        <div class="menu-card reveal-up" data-category="beverages">
+          <div class="menu-card-icon">🧋</div>
+          <div class="menu-card-content">
+            <div class="menu-card-header">
+              <h3>Iced Matcha Latte</h3>
+              <span class="menu-price">$5.50</span>
+            </div>
+            <p>Ceremonial-grade matcha whisked with oat milk over ice</p>
+            <span class="menu-tag">Popular</span>
+          </div>
+        </div>
+        <div class="menu-card reveal-up" data-category="beverages">
+          <div class="menu-card-icon">🧋</div>
+          <div class="menu-card-content">
+            <div class="menu-card-header">
+              <h3>Berry Smoothie</h3>
+              <span class="menu-price">$6.00</span>
+            </div>
+            <p>Blueberries, strawberries, and banana blended with yogurt</p>
+          </div>
+        </div>
+        <div class="menu-card reveal-up" data-category="beverages">
+          <div class="menu-card-icon">🧋</div>
+          <div class="menu-card-content">
+            <div class="menu-card-header">
+              <h3>Fresh Lemonade</h3>
+              <span class="menu-price">$4.00</span>
+            </div>
+            <p>Hand-squeezed lemons with a hint of mint and honey</p>
+          </div>
+        </div>
+        <div class="menu-card reveal-up" data-category="beverages">
+          <div class="menu-card-icon">🧋</div>
+          <div class="menu-card-content">
+            <div class="menu-card-header">
+              <h3>Hot Chocolate</h3>
+              <span class="menu-price">$4.50</span>
+            </div>
+            <p>Belgian chocolate melted into steamed milk with marshmallows</p>
+            <span class="menu-tag new">Seasonal</span>
+          </div>
+        </div>
+
+        <!-- Snacks -->
+        <div class="menu-card reveal-up" data-category="snacks">
+          <div class="menu-card-icon">🍟</div>
+          <div class="menu-card-content">
+            <div class="menu-card-header">
+              <h3>Avocado Toast</h3>
+              <span class="menu-price">$8.00</span>
+            </div>
+            <p>Sourdough, smashed avo, cherry tomatoes, feta & micro greens</p>
+            <span class="menu-tag">Bestseller</span>
+          </div>
+        </div>
+        <div class="menu-card reveal-up" data-category="snacks">
+          <div class="menu-card-icon">🍟</div>
+          <div class="menu-card-content">
+            <div class="menu-card-header">
+              <h3>Grilled Panini</h3>
+              <span class="menu-price">$7.50</span>
+            </div>
+            <p>Mozzarella, sun-dried tomatoes, pesto on ciabatta bread</p>
+          </div>
+        </div>
+        <div class="menu-card reveal-up" data-category="snacks">
+          <div class="menu-card-icon">🍟</div>
+          <div class="menu-card-content">
+            <div class="menu-card-header">
+              <h3>Truffle Fries</h3>
+              <span class="menu-price">$6.00</span>
+            </div>
+            <p>Crispy fries tossed in truffle oil with parmesan & herbs</p>
+          </div>
+        </div>
+        <div class="menu-card reveal-up" data-category="snacks">
+          <div class="menu-card-icon">🍟</div>
+          <div class="menu-card-content">
+            <div class="menu-card-header">
+              <h3>Chicken Wrap</h3>
+              <span class="menu-price">$8.50</span>
+            </div>
+            <p>Grilled chicken, mixed greens, hummus in a warm tortilla</p>
+          </div>
+        </div>
+
+        <!-- Desserts -->
+        <div class="menu-card reveal-up" data-category="desserts">
+          <div class="menu-card-icon">🍰</div>
+          <div class="menu-card-content">
+            <div class="menu-card-header">
+              <h3>Tiramisu</h3>
+              <span class="menu-price">$7.00</span>
+            </div>
+            <p>Classic Italian layers of mascarpone, espresso-soaked ladyfingers</p>
+            <span class="menu-tag">Bestseller</span>
+          </div>
+        </div>
+        <div class="menu-card reveal-up" data-category="desserts">
+          <div class="menu-card-icon">🍰</div>
+          <div class="menu-card-content">
+            <div class="menu-card-header">
+              <h3>Croissant</h3>
+              <span class="menu-price">$4.00</span>
+            </div>
+            <p>Buttery, flaky French pastry baked fresh every morning</p>
+          </div>
+        </div>
+        <div class="menu-card reveal-up" data-category="desserts">
+          <div class="menu-card-icon">🍰</div>
+          <div class="menu-card-content">
+            <div class="menu-card-header">
+              <h3>Blueberry Cheesecake</h3>
+              <span class="menu-price">$7.50</span>
+            </div>
+            <p>Creamy New York-style cheesecake with fresh blueberry compote</p>
+            <span class="menu-tag new">New</span>
+          </div>
+        </div>
+        <div class="menu-card reveal-up" data-category="desserts">
+          <div class="menu-card-icon">🍰</div>
+          <div class="menu-card-content">
+            <div class="menu-card-header">
+              <h3>Chocolate Brownie</h3>
+              <span class="menu-price">$5.50</span>
+            </div>
+            <p>Fudgy dark chocolate brownie with walnuts served warm</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SPECIAL OFFERS ============ -->
+  <section id="offers" class="offers section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-label"><i class="fas fa-tags"></i> Special Offers</span>
+        <h2 class="section-title">Today's Deals</h2>
+        <p class="section-desc">Don't miss out on our limited-time offers and seasonal specials.</p>
+      </div>
+      <div class="offers-grid">
+        <div class="offer-card offer-featured reveal-up">
+          <div class="offer-badge">🔥 Hot Deal</div>
+          <div class="offer-content">
+            <h3>Happy Hour Special</h3>
+            <p>Buy 1 Get 1 Free on all hot beverages every weekday from 3–5 PM!</p>
+            <div class="offer-meta">
+              <span class="offer-validity"><i class="fas fa-clock"></i> Mon – Fri, 3:00 – 5:00 PM</span>
+            </div>
+            <div class="offer-discount">BOGO</div>
+          </div>
+        </div>
+        <div class="offer-card reveal-up">
+          <div class="offer-badge">🎓 Student</div>
+          <div class="offer-content">
+            <h3>Student Discount</h3>
+            <p>Show your student ID and enjoy 15% off on your entire order, every day.</p>
+            <div class="offer-meta">
+              <span class="offer-validity"><i class="fas fa-id-card"></i> Valid student ID required</span>
+            </div>
+            <div class="offer-discount">15% OFF</div>
+          </div>
+        </div>
+        <div class="offer-card reveal-up">
+          <div class="offer-badge">☀️ Weekend</div>
+          <div class="offer-content">
+            <h3>Weekend Brunch Combo</h3>
+            <p>Any coffee + avocado toast + dessert for just $14.99 on weekends.</p>
+            <div class="offer-meta">
+              <span class="offer-validity"><i class="fas fa-calendar"></i> Sat & Sun, 9 AM – 1 PM</span>
+            </div>
+            <div class="offer-discount">$14.99</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GALLERY ============ -->
+  <section id="gallery" class="gallery section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-label"><i class="fas fa-camera"></i> Gallery</span>
+        <h2 class="section-title">Peek Inside</h2>
+        <p class="section-desc">A glimpse of the Urban Cafe experience — from our cozy interiors to our beautifully crafted food and drinks.</p>
+      </div>
+      <div class="gallery-grid reveal-up">
+        <div class="gallery-item gallery-large">
+          <img src="images/hero.png" alt="Urban Cafe warm interior" loading="lazy">
+          <div class="gallery-overlay">
+            <i class="fas fa-expand"></i>
+            <span>Café Interior</span>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/about.png" alt="Latte art coffee" loading="lazy">
+          <div class="gallery-overlay">
+            <i class="fas fa-expand"></i>
+            <span>Latte Art</span>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/gallery1.png" alt="Cozy reading corner" loading="lazy">
+          <div class="gallery-overlay">
+            <i class="fas fa-expand"></i>
+            <span>Cozy Corner</span>
+          </div>
+        </div>
+        <div class="gallery-item gallery-wide">
+          <img src="images/gallery2.png" alt="Café food spread" loading="lazy">
+          <div class="gallery-overlay">
+            <i class="fas fa-expand"></i>
+            <span>Fresh Food</span>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/hero.png" alt="Coffee brewing" loading="lazy">
+          <div class="gallery-overlay">
+            <i class="fas fa-expand"></i>
+            <span>Brewing Magic</span>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/gallery1.png" alt="Café ambience" loading="lazy">
+          <div class="gallery-overlay">
+            <i class="fas fa-expand"></i>
+            <span>Evening Vibes</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ INSTAGRAM FEED ============ -->
+  <section class="instagram section-sm">
+    <div class="container">
+      <div class="instagram-header reveal-up">
+        <div>
+          <span class="section-label"><i class="fab fa-instagram"></i> Follow Us</span>
+          <h2 class="section-title-sm">@urbancafe on Instagram</h2>
+        </div>
+        <a href="https://instagram.com" target="_blank" class="btn btn-outline btn-sm"><i class="fab fa-instagram"></i> Follow</a>
+      </div>
+      <div class="instagram-grid reveal-up">
+        <div class="insta-item">
+          <img src="images/about.png" alt="Instagram post" loading="lazy">
+          <div class="insta-overlay"><i class="fas fa-heart"></i> 342</div>
+        </div>
+        <div class="insta-item">
+          <img src="images/gallery1.png" alt="Instagram post" loading="lazy">
+          <div class="insta-overlay"><i class="fas fa-heart"></i> 528</div>
+        </div>
+        <div class="insta-item">
+          <img src="images/gallery2.png" alt="Instagram post" loading="lazy">
+          <div class="insta-overlay"><i class="fas fa-heart"></i> 419</div>
+        </div>
+        <div class="insta-item">
+          <img src="images/hero.png" alt="Instagram post" loading="lazy">
+          <div class="insta-overlay"><i class="fas fa-heart"></i> 697</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ REVIEWS ============ -->
+  <section id="reviews" class="reviews section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-label"><i class="fas fa-quote-left"></i> Testimonials</span>
+        <h2 class="section-title">What Our Guests Say</h2>
+        <p class="section-desc">Real love from real visitors — here's what makes Urban Cafe special.</p>
+      </div>
+      <div class="reviews-grid">
+        <div class="review-card reveal-up">
+          <div class="review-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="review-text">"Urban Cafe is my go-to study spot. The matcha latte is incredible, the Wi-Fi is fast, and the ambience is perfect for long productive sessions."</p>
+          <div class="review-author">
+            <div class="review-avatar">S</div>
+            <div>
+              <h4>Sophia Chen</h4>
+              <span>University Student</span>
+            </div>
+          </div>
+        </div>
+        <div class="review-card reveal-up">
+          <div class="review-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="review-text">"The avocado toast and cappuccino combo is pure bliss. I love how warm and welcoming the staff always are. This place truly feels like home."</p>
+          <div class="review-author">
+            <div class="review-avatar">M</div>
+            <div>
+              <h4>Michael Torres</h4>
+              <span>Freelance Designer</span>
+            </div>
+          </div>
+        </div>
+        <div class="review-card reveal-up">
+          <div class="review-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+          </div>
+          <p class="review-text">"Best tiramisu in the city, hands down! The café has such a cozy aesthetic — perfect for date nights or catching up with friends."</p>
+          <div class="review-author">
+            <div class="review-avatar">A</div>
+            <div>
+              <h4>Aisha Patel</h4>
+              <span>Food Blogger</span>
+            </div>
+          </div>
+        </div>
+        <div class="review-card reveal-up">
+          <div class="review-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="review-text">"I bring my team here for meetings all the time. Great coffee, tasty snacks, and the most relaxing environment. Highly recommend!"</p>
+          <div class="review-author">
+            <div class="review-avatar">J</div>
+            <div>
+              <h4>James Wilson</h4>
+              <span>Startup Founder</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="contact section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-label"><i class="fas fa-map-pin"></i> Find Us</span>
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-desc">We'd love to see you! Drop by, call us, or send a message anytime.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal-left">
+          <div class="contact-card">
+            <div class="contact-card-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <h4>Our Location</h4>
+              <p>123 Brew Street, Downtown<br>New York, NY 10001</p>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-card-icon"><i class="fas fa-phone-alt"></i></div>
+            <div>
+              <h4>Call Us</h4>
+              <p>+1 (555) 123-4567</p>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-card-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <h4>Email Us</h4>
+              <p>hello@urbancafe.com</p>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-card-icon"><i class="fas fa-clock"></i></div>
+            <div>
+              <h4>Opening Hours</h4>
+              <p>Mon – Fri: 7:00 AM – 10:00 PM<br>Sat – Sun: 8:00 AM – 11:00 PM</p>
+            </div>
+          </div>
+        </div>
+        <div class="contact-map reveal-right">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.9476519598093!2d-73.99209!3d40.74844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQ0JzU0LjQiTiA3M8KwNTknMzEuNSJX!5e0!3m2!1sen!2sus!4v1610000000000!5m2!1sen!2sus" 
+            allowfullscreen="" 
+            loading="lazy"
+            title="Urban Cafe Location"
+            id="contactMap"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ RESERVATION ============ -->
+  <section id="reservation" class="reservation section">
+    <div class="container">
+      <div class="reservation-wrapper reveal-up">
+        <div class="reservation-info">
+          <span class="section-label light"><i class="fas fa-calendar-check"></i> Reserve a Table</span>
+          <h2 class="section-title light">Book Your Spot</h2>
+          <p>Guarantee your seat at Urban Cafe. Whether it's a casual hangout or a special celebration, we'll have your table ready.</p>
+          <div class="reservation-perks">
+            <div class="perk"><i class="fas fa-check-circle"></i> Instant Confirmation</div>
+            <div class="perk"><i class="fas fa-check-circle"></i> Free Cancellation</div>
+            <div class="perk"><i class="fas fa-check-circle"></i> Best Seats Guaranteed</div>
+          </div>
+        </div>
+        <form class="reservation-form" id="reservationForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="resName"><i class="fas fa-user"></i> Full Name</label>
+              <input type="text" id="resName" placeholder="John Doe" required>
+            </div>
+            <div class="form-group">
+              <label for="resPhone"><i class="fas fa-phone"></i> Phone Number</label>
+              <input type="tel" id="resPhone" placeholder="+1 (555) 000-0000" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="resDate"><i class="fas fa-calendar"></i> Date</label>
+              <input type="date" id="resDate" required>
+            </div>
+            <div class="form-group">
+              <label for="resTime"><i class="fas fa-clock"></i> Time</label>
+              <input type="time" id="resTime" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="resGuests"><i class="fas fa-users"></i> Number of Guests</label>
+              <select id="resGuests" required>
+                <option value="" disabled selected>Select guests</option>
+                <option value="1">1 Person</option>
+                <option value="2">2 People</option>
+                <option value="3">3 People</option>
+                <option value="4">4 People</option>
+                <option value="5">5 People</option>
+                <option value="6">6+ People</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="resEmail"><i class="fas fa-envelope"></i> Email</label>
+              <input type="email" id="resEmail" placeholder="john@email.com" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="resNotes"><i class="fas fa-comment"></i> Special Requests</label>
+            <textarea id="resNotes" placeholder="Any dietary needs or special occasions?" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg" id="resSubmitBtn">
+            <span class="btn-text"><i class="fas fa-calendar-check"></i> Reserve Now</span>
+            <span class="btn-loading" style="display:none"><i class="fas fa-spinner fa-spin"></i> Booking...</span>
+            <span class="btn-success" style="display:none"><i class="fas fa-check"></i> Reserved!</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="footer-logo">
+            <i class="fas fa-mug-hot"></i>
+            <span>Urban<em>Cafe</em></span>
+          </a>
+          <p>Your daily dose of comfort. Handcrafted coffee, artisan treats, and a warm space to call your own.</p>
+          <div class="footer-socials">
+            <a href="#" aria-label="Instagram" id="socialInstagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook" id="socialFacebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter" id="socialTwitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="TikTok" id="socialTiktok"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Visit Us</h4>
+          <ul>
+            <li><i class="fas fa-map-marker-alt"></i> 123 Brew Street, NY</li>
+            <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+            <li><i class="fas fa-envelope"></i> hello@urbancafe.com</li>
+          </ul>
+        </div>
+        <div class="footer-newsletter">
+          <h4>Stay Updated</h4>
+          <p>Get exclusive offers and updates delivered to your inbox.</p>
+          <form class="newsletter-form" id="newsletterForm">
+            <input type="email" placeholder="Your email address" id="newsletterEmail" required>
+            <button type="submit" id="newsletterSubmitBtn"><i class="fas fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Urban Cafe. All rights reserved. Made with <i class="fas fa-heart"></i> and lots of ☕</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ BACK TO TOP ============ -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
